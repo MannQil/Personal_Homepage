@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Sales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        .featured-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            margin: 0 auto; /* Center the image */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        .button {
+            background-color: #5c4a31; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(42, 11, 239, 0.1);
+            transition: 0.3s;
+            width: 30%; /* Adjusted width */
+            border-radius: 10px;
+            overflow: hidden;
+            background-image: linear-gradient(to bottom, #99ff99 0%, #ff99cc 100%);
+        }
+        
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(29, 12, 143, 0.2);
+            transform: translateY(-5px); /* Lift the card slightly on hover */
+        }
+        
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .column {
+            flex: 1;
+        }
+        
+        .buttons {
+            text-align: center;
+        }
+        
+        .buttons a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .buttons a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="container">
+                <h2 style="text-align: center;"><b>Play Station 4 Pro Edition</b></h2>
+                <img src="ps4.jpeg" alt="Play Station 4 Pro Edition" class="featured-image">
+                <p><b>About:</b> The original PS4 model supports up to 1080p and 1080i video standards, while the Pro model supports 4K resolution. The console includes a 500 gigabyte hard drive for additional storage, which can be upgraded by the user.</p>
+                <div class="buttons">
+                    <a href="https://www.example.com" target="_blank" class="button">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="container">
+                <h2 style="text-align: center;"><b>Iphone 15 Pro Max</b></h2>
+                <img src="153.jpeg" alt="Iphone 15 Pro Max" class="featured-image">
+                <p><b>About:</b> The iPhone 15 Pro and Pro Max have a few special new hardware features that you should know about to make the most of your new phone, including five amazing cameras, a new action button and charging at USB 3.0 speeds.</p>
+                <div class="buttons">
+                    <a href="https://www.example.com" target="_blank" class="button">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="container">
+                <h2 style="text-align: center;"><b>Apple Vision Pro</b></h2>
+                <img src="applevision2.jpg" alt="Apple Vision Pro" class="featured-image">
+                <p><b>About:</b> Apple Vision Pro helps you remain connected to those around you. EyeSight reveals your eyes and lets those nearby know when you're using apps or fully immersed in an experience. When someone approaches, Apple Vision Pro simultaneously lets you see the person and reveals your eyes to them.</p>
+                <div class="buttons">
+                    <a href="https://www.example.com" target="_blank" class="button">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <center><button><a href ="{% url 'about' %}">about me</a></button></center>
+    
+    <center><button><a href ="{% url 'hobbies' %}">hobbies</a></button></center>
+</body>
+</html>
